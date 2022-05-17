@@ -4,29 +4,43 @@
 <head>
     <meta charset="UTF-8" />
     <title>review for Eloquent Ruby by Russ Olsen</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="styles/eloquent-ruby.css" rel="stylesheet" />
 
 </head>
 
 <body>
-    <nav>
+    <header>
+        <nav class="topnav">
+            <div class="nav-elements">
 
-    </nav>
+                <ul class="nav-content">
+
+                    <li> <a href="index.html" title="home" class="active"> <i class="fas fa-home"></i> Home </a> </li>
+                    <li> <a href="contanct.html" title="contact"> <i></i> Contact me </a> </li>
+                   
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
     <section>
-        <h1>Book #1 - Eloquent Ruby </h1>
+        <h1 class="book-title">Book #1 - Eloquent Ruby </h1>
 
     </section>
 
 
     <aside>
-       
-            <a href="https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104">
-                <img alt=" " src="images/cover-eloquent_ruby.jpg">
-            </a>
-       
+
+        <a href="https://www.amazon.com/Eloquent-Ruby-Addison-Wesley-Professional/dp/0321584104">
+            <img alt=" " src="images/cover-eloquent_ruby.jpg">
+        </a>
+
     </aside>
 
 
-    <section id="info about reviewer">
+    <section class="author-info">
         <p>
             Author: Russ Olsen<br>
             E-mail: russ@russolsen.com<br>
@@ -40,7 +54,7 @@
         </p>
     </section>
 
-    <section id="desccription">
+    <section class="desccription">
         <article>
             <h4>Description:</h4>
             <p> It is easy to write correct Ruby code, but to gain the fluency needed to write great Ruby code, you must
@@ -72,55 +86,65 @@
 
 
 
-    <section id="revies">
-        <section id="review_n">
-            <p>
-                Review #1 Title: The first Ruby book I read in full within 24 hours<br>
-                Reviewer #1: Peter Cooper<br>
-                Review #1 Date: February 26, 2011<br>
-                Review #1:<br>
-                <br>
-                This book is so easy to read yet so useful and informative that I read it in its entirety within 24
-                hours (across 2 distinct days admittedly ;-)). <br>
-            </p>
-            <p>
-                Eloquent Ruby is a book published by Addison Wesley and written by Russ Olsen (who also wrote Design
-                Patterns in Ruby a few years ago). It clocks in at around 400 pages and has 31 chapters clocking in at
-                around a punchy 10 pages each. Each chapter is titled as a guideline you should follow to write
-                "eloquent" Ruby - things like Create Classes That Understand Equality and Write Code That Looks Like
-                Ruby - and typically the claim is explained, some code examples shown and discussed, some real world
-                examples pointed to, and that's it. As with Design Patterns in Ruby, Russ adopts a chatty, familiar
-                tone. Reading this book is like reading a book specifically written for you by a friend. He doesn't
-                shoot off on many unnecessary tangents and he keeps the stories short and sweet but this book certainly
-                couldn't be called dry.<br>
-                <br>
-                The book is also notably short of egregious errors or omissions. Even when I don't read something with a
-                fine-toothed comb on standby, I can usually pick out a laundry list of factual and grammatical errors or
-                omissions (as both Obie Fernandez and my wife will attest) but Eloquent Ruby gave me little to chew on.
-                I can only bring to mind a few spacing and formatting issues and only one true "error": a > instead of a
-                in a class definition on a single example.<br>
-                <br>
-                Russ tries to remain neutral with his choice of Ruby implementations but the book seems to focus
-                primarily on Ruby 1.9 (Ruby 1.9.1 specifically but that's just due to when he wrote it) while
-                providing useful footnotes in the cases where there are differences to Ruby 1.8. No matter what Ruby
-                implementation you're using, there's little to confuse you as most of it is very non-implementation
-                and non-version specific.<br>
-                <br>
-                I wholeheartedly recommend this book to anyone except those who, well, could have written a similar
-                book themselves. The short punchy chapters make it a delight to read and gives the option of reading
-                it merely 10 minutes at a time before bed or similar. The short chapters also make it useful as a
-                reference if you forget how to do a certain thing like, say, use method_missing, even though it's
-                not put together as a reference book at all. Lastly, this book is a must read if you're not
-                confident with Ruby idioms and the best way to structure and lay out your code - Russ's approaches
-                reinforce the current "standard" way to write Ruby and this alone is worth the price of admission.
+    <section class="reviews">
+        <section class="review_num">
+            <section class="reviewer-info">
+                <p>
+                    Review #1 Title: The first Ruby book I read in full within 24 hours<br>
+                    Reviewer #1: Peter Cooper<br>
+                    Review #1 Date: February 26, 2011<br>
+                    Review #1:<br>
+                    <br>
+    
+                </p>
+            </section>
+            <section class="review-body">
+                <p>
+                    This book is so easy to read yet so useful and informative that I read it in its entirety within 24
+                    hours (across 2 distinct days admittedly ;-)). <br>
+                    Eloquent Ruby is a book published by Addison Wesley and written by Russ Olsen (who also wrote Design
+                    Patterns in Ruby a few years ago). It clocks in at around 400 pages and has 31 chapters clocking in
+                    at
+                    around a punchy 10 pages each. Each chapter is titled as a guideline you should follow to write
+                    "eloquent" Ruby - things like Create Classes That Understand Equality and Write Code That Looks Like
+                    Ruby - and typically the claim is explained, some code examples shown and discussed, some real world
+                    examples pointed to, and that's it. As with Design Patterns in Ruby, Russ adopts a chatty, familiar
+                    tone. Reading this book is like reading a book specifically written for you by a friend. He doesn't
+                    shoot off on many unnecessary tangents and he keeps the stories short and sweet but this book
+                    certainly
+                    couldn't be called dry.<br>
+                    <br>
+                    The book is also notably short of egregious errors or omissions. Even when I don't read something
+                    with a
+                    fine-toothed comb on standby, I can usually pick out a laundry list of factual and grammatical
+                    errors or
+                    omissions (as both Obie Fernandez and my wife will attest) but Eloquent Ruby gave me little to chew
+                    on.
+                    I can only bring to mind a few spacing and formatting issues and only one true "error": a > instead
+                    of a
+                    in a class definition on a single example.<br>
+                    <br>
+                    Russ tries to remain neutral with his choice of Ruby implementations but the book seems to focus
+                    primarily on Ruby 1.9 (Ruby 1.9.1 specifically but that's just due to when he wrote it) while
+                    providing useful footnotes in the cases where there are differences to Ruby 1.8. No matter what Ruby
+                    implementation you're using, there's little to confuse you as most of it is very non-implementation
+                    and non-version specific.<br>
+                    <br>
+                    I wholeheartedly recommend this book to anyone except those who, well, could have written a similar
+                    book themselves. The short punchy chapters make it a delight to read and gives the option of reading
+                    it merely 10 minutes at a time before bed or similar. The short chapters also make it useful as a
+                    reference if you forget how to do a certain thing like, say, use method_missing, even though it's
+                    not put together as a reference book at all. Lastly, this book is a must read if you're not
+                    confident with Ruby idioms and the best way to structure and lay out your code - Russ's approaches
+                    reinforce the current "standard" way to write Ruby and this alone is worth the price of admission.
 
-            </p>
-
+                </p>
+            </section>
         </section>
 
 
-        <section id="review_n">
-            <section id="info about reviewer">
+        <section class="review_num">
+            <section class="reviewer-info">
                 <p>
                     Review #2 Title: Eloquent Olsen<br>
                     Reviewer #2: Fogus<br>
@@ -130,7 +154,7 @@
 
             </section>
 
-            <section>
+            <section class="review-body">
 
 
                 <p> For better or worse the vast majority of my work life journey has been travelled with Java as my

@@ -1,0 +1,86 @@
+a:hover {
+    color: rgb(223, 158, 158) ;
+    background-color: rgb(85, 165, 85) ;
+    transform: scale(1.9)
+  }
+img:hover {
+    transform: scale(1.1);
+    }  
+
+body {
+    background-color: rgb(253, 252, 251);
+    font-family: Helvetica;
+}
+
+footer {
+    background-color: rgb(204, 183, 174);
+    border: solid rgb(112, 102, 119);
+
+}
+header {
+    background-color: rgb(204, 183, 174);
+    border:  solid rgb(112, 102, 119);
+    box-sizing: content-box;
+   
+}
+
+nav{
+    padding: 0px 50px;
+    font-family:  Helvetica;
+    height: 57px;
+    font-size: smaller;
+}
+
+.nav-content {
+    padding: 0px ;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px;
+   }
+
+.nav-content li {
+    display: inline-block;
+    
+   }  
+
+.nav-content li a {
+    text-decoration:none;
+    padding: 14px 10px;
+    display: flex;
+   }
+    
+.nav-content li a .fa-caret-down {
+     padding: 0px;
+    }   
+
+ul{
+    list-style: none;
+}
+
+.book-title{
+    font-style: italic;
+    font-size: larger;
+}
+
+.topnav a:hover {
+    background-color:  rgb(166, 128, 140);
+    color: rgb(86, 82, 100);
+    border: solid rgb(86, 82, 100);
+    
+  }
+  
+.topnav a.active {
+    background-color: rgb(166, 128, 140);
+    border: solid rgb(86, 82, 100);
+    color: rgb(86, 82, 100);
+    font-size: large;
+}
+.topnav a {
+    margin-left: auto;
+    float: left;
+    color: rgb(86, 82, 100);
+    text-align: justify;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
